@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title></title>
+
+		<script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+		<script type="text/javascript">
+			jQuery(window).load(function($){
+				atualizaRelogio();
+			});
+		</script>
+
+</head>
+
+
+<body>
+				
+
+<center>
+
+<font color="white">
+<h1>BEM VINDO!! </h1>
+
+<br>
+<br>
+
+<h2> O melhor hostel que cabe no seu bolso!! </h2>
+<h2> Faça uma reserva e venha fazer parte de nossa família. </h2>
+
+</font>
+<br> <br>
+
+<body background="https://static.wixstatic.com/media/956ad8_fdc23782d3ec41e29ef5fbf007b7c3b6~mv1.jpg_srz_1244_829_85_22_0.50_1.20_0.00_jpg_srz" bgproperties="fixed">
+
+
+<font color="white">
+<h2>Faça sua reserva agora!!</h2> 
+<button> RESERVA </button> 
+
+<br>
+
+<h2>Alterar dados cadastrais: </h2> 
+<button> ALTERAR </button> 
+<br>
+<h3> Convide amigos e compartilhe nosso facebook para ganhar descontos:</h3>  
+<button> CONVIDAR </button>
+<br>
+<br>
+<a href="https://www.facebook.com/"> Facebook </a>
+
+<div>
+			<output id="data" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>
+		</div>
+		<div>
+			<output id="hora" style="font-family: 'arial black', 'avant garde'; font-size: 24px;"></output>				
+		</div>	
+
+</center>
+
+	
+</font>
+</body>
+
+<script>
+		function atualizaRelogio(){ 
+			var momentoAtual = new Date();
+			
+			var vhora = momentoAtual.getHours();
+			var vminuto = momentoAtual.getMinutes();
+			var vsegundo = momentoAtual.getSeconds();
+			
+			var vdia = momentoAtual.getDate();
+			var vmes = momentoAtual.getMonth() + 1;
+			var vano = momentoAtual.getFullYear();
+			
+			if (vdia < 10){ vdia = "0" + vdia;}
+			if (vmes < 10){ vmes = "0" + vmes;}
+			if (vhora < 10){ vhora = "0" + vhora;}
+			if (vminuto < 10){ vminuto = "0" + vminuto;}
+			if (vsegundo < 10){ vsegundo = "0" + vsegundo;}
+ 
+			dataFormat = vdia + " / " + vmes + " / " + vano;
+			horaFormat = vhora + " : " + vminuto + " : " + vsegundo;
+ 
+			document.getElementById("data").innerHTML = dataFormat;
+			document.getElementById("hora").innerHTML = horaFormat;
+ 
+			setTimeout("atualizaRelogio()",1000);
+		}
+	</script>
+
+ 
+</html>
