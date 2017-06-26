@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body background="https://www.st-christophers.co.uk/__data/assets/image/0009/444645/hammersmith_hostel_02.jpg" bgproperties="fixed">
+<font color="white">
+
+<center>
+<br>
+<h1>GOESASY HOSTEL</h1>
+
+<br>
+
+<h2> Faça seu login: </h2>
+<form action="/action_page.php">
+  Email:<br>
+  <input type="text" name="firstname">
+  <br>
+  Senha:<br>
+  <input type="number" name="lastname">
+  <br><br>
+  <input type="submit" value="Log in">
+</form> 
+<br><br> 
+
+<h2>Criar novo cadastro<//h2>
+
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="sobrenome">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label for="rg">RG: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="rg" size="13" maxlength="13"> 
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>CPF:</label>
+   </td>
+   <td align="left">
+    <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+   </td>
+  </tr>
+ </table>
+ <form>
+ <input type="submit" value="Criar novo cadastro"> 
+ </form> 
+<br />
+
+</font>
+</center>
+</body>
+</html>
